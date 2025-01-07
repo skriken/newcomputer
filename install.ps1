@@ -131,7 +131,7 @@ reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Taskband /v Favo
 reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\MultitaskingView\AltTabViewHost /v GroupByApplication /t REG_DWORD /d 0 /f
 
 # Disable grouped windows
-reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced /v TaskbarGlomLevel /t REG_DWORD /d 2 /f
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced /v TaskbarGlomLevel /t REG_DWORD /d 0 /f
 
 # Enable clipboard history
 reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced /v UseClipboardHistory /t REG_DWORD /d 1 /f
