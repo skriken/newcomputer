@@ -61,7 +61,7 @@ if (!(Get-Command scoop -ErrorAction SilentlyContinue)) {
     Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 
     # Download and install Scoop
-    Invoke-RestMethod get.scoop.sh | Invoke-Expression
+    iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
 
     # Add extras bucket (needed for some packages)
     scoop bucket add extras
